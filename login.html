@@ -1,0 +1,65 @@
+CTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>PostaLink - Login</title>
+
+    <link rel="stylesheet" href="decor.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <html lang="en-US">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div id="login">
+
+        <form action="validate.php" method="POST">
+
+          <fieldset class="clearfix">
+
+            <p><span class="fontawesome-user"></span><input type="text" value="Username" name = "username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p><span class="fontawesome-lock"></span><input type="password"  value="Password" name = "password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+            <p><input type = "radio" name = "op" value = "LOGIN" id = "login_id"/>
+            <label for = "login_id"> LOGIN </label>
+            <input type = "radio" name = "op" value = "SIGN UP" id = "sign_id"/>
+            <label for = "sign_id"> SIGN UP <label>
+            </p>
+            <p><input type="submit" value="GO"></p>
+
+          </fieldset>
+
+        </form>
+
+
+      </div> <!-- end login -->
+
+    </div>
+
+  </body>
+</html>
+
+</body>
+
+</html>
+

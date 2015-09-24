@@ -1,0 +1,22 @@
++---------------+-----------------------+------+-----+---------+----------------+
+| Field         | Type                  | Null | Key | Default | Extra          |
++---------------+-----------------------+------+-----+---------+----------------+
+| story_id      | mediumint(8) unsigned | NO   | PRI | NULL    | auto_increment |
+| story_title   | varchar(70)           | NO   |     | NULL    |                |
+| story_link    | tinytext              | YES  |     | NULL    |                |
+| story_content | blob                  | YES  |     | NULL    |                |
+| creator_id    | mediumint(8) unsigned | NO   | MUL | NULL    |                |
+| creator_name  | varchar(50)           | NO   |     | NULL    |                |
+| votes         | mediumint(9)          | NO   |     | NULL    |                |
++---------------+-----------------------+------+-----+---------+----------------+
+
++-----------------+-----------------------+------+-----+---------+----------------+
+| Field           | Type                  | Null | Key | Default | Extra          |
++-----------------+-----------------------+------+-----+---------+----------------+
+| comment_id      | mediumint(8) unsigned | NO   | PRI | NULL    | auto_increment |
+| comment_content | text                  | NO   |     | NULL    |                |
+| story_id        | mediumint(8) unsigned | NO   | MUL | NULL    |                |
+| creator_id      | mediumint(8) unsigned | NO   | MUL | NULL    |                |
+| creator_name    | varchar(50)           | NO   |     | NULL    |                |
+| votes           | mediumint(9)          | NO   |     | NULL    |                |
++-----------------+-----------------------+------+-----+---------+----------------+
